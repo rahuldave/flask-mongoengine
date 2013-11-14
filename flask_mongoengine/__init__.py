@@ -6,7 +6,8 @@ from flask import abort
 import mongoengine
 
 from mongoengine.queryset import MultipleObjectsReturned, DoesNotExist, QuerySet
-from mongoengine.base import ValidationError
+#from mongoengine.base import ValidationError
+from mongoengine.errors import ValidationError
 
 from .sessions import *
 from .pagination import *
